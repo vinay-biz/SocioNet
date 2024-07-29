@@ -1,12 +1,12 @@
 import User from "../models/User.js";
 
-//READ
+/* READ */
 export const getUser = async (req, res) => {
   try {
     const { id } = req.params;
     const user = await User.findById(id);
     res.status(200).json(user);
-  } catch (error) {
+  } catch (err) {
     res.status(404).json({ message: err.message });
   }
 };
@@ -25,12 +25,12 @@ export const getUserFriends = async (req, res) => {
       }
     );
     res.status(200).json(formattedFriends);
-  } catch (error) {
+  } catch (err) {
     res.status(404).json({ message: err.message });
   }
 };
 
-//Update
+/* UPDATE */
 export const addRemoveFriend = async (req, res) => {
   try {
     const { id, friendId } = req.params;
@@ -40,7 +40,7 @@ export const addRemoveFriend = async (req, res) => {
     if (user.friends.includes(friendId)) {
       user.friends = user.friends.filter((id) => id !== friendId);
       friend.friends = friend.friends.filter((id) => id !== id);
-    } else {  
+    } else {
       user.friends.push(friendId);
       friend.friends.push(id);
     }
@@ -57,8 +57,7 @@ export const addRemoveFriend = async (req, res) => {
     );
 
     res.status(200).json(formattedFriends);
-  }
-  catch (error) {
+  } catch (err) {
     res.status(404).json({ message: err.message });
   }
-}
+};
