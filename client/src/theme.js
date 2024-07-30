@@ -16,16 +16,16 @@ export const colorTokens = {
       1000: "#000000",
     },
     primary: {
-      50: "#E6FBFF",
-      100: "#CCF7FE",
-      200: "#99EEFD",
-      300: "#66E6FC",
-      400: "#33DDFB",
-      500: "#00D5FA",
-      600: "#00A0BC",
-      700: "#006B7D",
-      800: "#00353F",
-      900: "#001519",
+      50: "#E6F9E6", // Very light green
+      100: "#CCF2CC", // Light green
+      200: "#99E599", // Lighter green
+      300: "#66D966", // Light green
+      400: "#33CC33", // Medium light green
+      500: "#00BF00", // Bright green
+      600: "#00A600", // Medium green
+      700: "#007F00", // Dark green
+      800: "#005900", // Very dark green
+      900: "#003300", // Near black green
     },
   };
   

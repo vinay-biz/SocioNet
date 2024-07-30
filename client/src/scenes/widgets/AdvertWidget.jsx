@@ -24,12 +24,12 @@ const AdvertWidget = () => {
         style={{ borderRadius: "0.75rem", margin: "0.75rem 0" }}
       />
       <FlexBetween>
-        <Typography color={main}>MikaCosmetics</Typography>
-        <Typography color={medium}>mikacosmetics.com</Typography>
+        <Typography color={main}>Mango Inc.</Typography>
+        <Typography color={medium}>mango.com</Typography>
       </FlexBetween>
       <Typography color={medium} m="0.5rem 0">
-        Your pathway to stunning and immaculate beauty and made sure your skin
-        is exfoliating skin and shining like light.
+        Upgrade to the powerful MangoBook Pro 15" with the latest M16 chip developed my Mango. State of the art processors, all new sytles!!
+        Visit the Mango Store Now
       </Typography>
     </WidgetWrapper>
   );
