@@ -102,6 +102,14 @@ const Form = () => {
     if (isRegister) await register(values, onSubmitProps);
   };
 
+  const handleGuestLogin = async () => {
+    const guestCredentials = {
+      email: "vinay@gmail.com",
+      password: "abcd1234",
+    };
+    await login(guestCredentials, { resetForm: () => {} });
+  };
+
   return (
     <Formik
       onSubmit={handleFormSubmit}
@@ -246,6 +254,20 @@ const Form = () => {
               }}
             >
               {isLogin ? "LOGIN" : "REGISTER"}
+            </Button>
+            <Button
+              fullWidth
+              type="button"
+              onClick={handleGuestLogin}
+              sx={{
+                mb: "2rem",
+                p: "1rem",
+                backgroundColor: palette.primary.light,
+                color: palette.background.alt,
+                "&:hover": { color: palette.primary.main },
+              }}
+            >
+              Guest Login
             </Button>
             <Typography
               onClick={() => {
