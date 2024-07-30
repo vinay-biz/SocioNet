@@ -26,6 +26,9 @@ const LoginPage = () => {
       >
         <Typography fontWeight="500" variant="h5" sx={{ mb: "1.5rem" }}>
         Welcome to SocioNet, for developers, by developers 🚀
+        For Guest 
+        login ID - vinay@gmail.com 
+        password - abcd1234
         </Typography>
         <Form />
       </Box>
