@@ -1,4 +1,8 @@
 Live Link : https://socio-net-frontend.vercel.app/
+For guest login : 
+Username : vinay@gmail.com
+Password : abcd1234 
+
 # SocioNet
  A Social Media Website Project using MERN Stack and REST APIs
 
